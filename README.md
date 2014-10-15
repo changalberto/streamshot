@@ -26,6 +26,6 @@ stream.pipe(concat(function(data){
 
 ```
 ##API
-``engine`` ``{String}`` phantomjs, slimerjs, triflejs.
-``url`` ``{String}`` URL.
-``size`` ``{String}`` The screen resolution to view webpage in. i.e. ``1024x800``
+- ``engine`` ``{String}`` phantomjs, slimerjs, triflejs.
+- ``url`` ``{String}`` URL.
+- ``size`` ``{String}`` The screen resolution to view webpage in. i.e. ``1024x800``
