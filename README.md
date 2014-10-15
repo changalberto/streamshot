@@ -1,7 +1,7 @@
 streamshot
 ==========
 
-Take Screenshot from headless browsers PhantomJS, SlimerJS, TrifleJS as a stream. Based off the source code of [screenshot-stream](https://github.com/kevva/screenshot-stream)
+A simple nodule that takes screenshot from headless browsers PhantomJS, SlimerJS or TrifleJS as a stream. Based off the source code of [screenshot-stream](https://github.com/kevva/screenshot-stream)
 
 ##Usage
 ```javascript
@@ -25,3 +25,7 @@ stream.pipe(concat(function(data){
 }));
 
 ```
+##API
+``engine`` ``{String}`` phantomjs, slimerjs, triflejs.
+``url`` ``{String}`` URL.
+``size`` ``{String}`` The screen resolution to view webpage in. i.e. ``1024x800``
