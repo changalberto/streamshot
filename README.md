@@ -1,7 +1,7 @@
 streamshot
 ==========
 
-A simple nodule that takes screenshot from headless browsers PhantomJS, SlimerJS or TrifleJS as a stream. Based off the source code of [screenshot-stream](https://github.com/kevva/screenshot-stream)
+A simple node module that takes screenshot from headless browsers PhantomJS, SlimerJS or TrifleJS as a stream. Based off the source code of [screenshot-stream](https://github.com/kevva/screenshot-stream)
 
 ##Usage
 ```javascript
