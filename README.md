@@ -2,3 +2,20 @@ streamshot
 ==========
 
 Take Screenshot from headless browsers PhantomJS, SlimerJS, TrifleJS as a stream. Based off the source code of [screenshot-stream](https://github.com/kevva/screenshot-stream)
+
+### Usage
+```javascript
+'use strict';
+
+var concat = require('concat-stream'),
+    isPNG = require('is-png'),
+    streamshot = require('../lib/streamshot.js');
+
+var stream = streamshot('slimerjs', 'http://majesticsteel.com/why-majestic', ' 1024x800');
+
+stream.pipe(concat(function(data){
+    console.log(data);
+    console.log(isPNG(data));
+}));
+
+```
